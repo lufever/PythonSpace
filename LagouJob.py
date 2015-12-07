@@ -18,7 +18,7 @@ def work(n):
     keys=jsonobj['result'][0].keys()
     keysstr=','.join(keys)
     keysstr=keysstr.rstrip(',')
-    cnxn = pyodbc.connect('driver={SQL Server};server=192.168.1.208;database=zhangyilongtest;uid=sa;pwd=windmagic')
+    cnxn = pyodbc.connect('driver={SQL Server};server=192.168.1.208;database=zhangyilongtest;uid=sa;pwd=pwd')
     cursor=cnxn.cursor()
     for company in jsonobj['result']:
         values=[]
